@@ -18,3 +18,8 @@ check.py contains all of the code you'll need to maintain. E.g. you can:
 - change the email notifications (sender address, subject text, message text, etc)
 
 check.py is well commented, so please refer to the file for more instructions on how to maintain it.
+
+
+## Testing
+
+To test that the script is running as desired (i.e. it's identifying erroneous URLs and notifying you of them) then try temporarily setting some URLs that you know to be invalid within the urls_to_check array and then run check.py. Once you're happy it's working, remove these intentionally erroneous URLs. 
