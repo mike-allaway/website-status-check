@@ -85,10 +85,10 @@ if(len(errors_list) > 0):
 	email = MIMEMultipart()
 	email['From'] = "m.j.allaway@bham.ac.uk"
 	email['To'] = "allawamj@adf.bham.ac.uk"
-	email['Subject'] = "Errors found for CAL website(s)"
+	email['Subject'] = "Unable to reach URL(s)"
 
 	# Build message text and attach to email
-	errors_text = "Found {} errors out of {} URLs checked:\n".format(len(errors_list), len(urls_to_check))
+	errors_text = "Found {} error(s) from a total of {} URLs checked:\n".format(len(errors_list), len(urls_to_check))
 	for e in errors_list:
 		errors_text += "\nurl: {}\nerror: {}\ndatetime: {}\n".format(e['url'], e['error'], e['datetime'])
 	email.attach(MIMEText(str(errors_text), 'plain'))
