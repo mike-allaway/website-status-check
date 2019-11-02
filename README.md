@@ -7,7 +7,7 @@ Check status of specified URLs and email notifications if any URLs are unreachab
 
 You can run the file manually: `python3 check.py`
 
-You can also add this to an automated service, like cron. Here's an example cron line to have the script automatically run every 15 minutes: `0,15,30,45 * * * * python3 /home/centos/website-status-check/check.py`
+You can also add this to an automated service, like cron. Here's an example cron line to have the script automatically run every 15 minutes if cloning this repository to your user directory: `0,15,30,45 * * * * python3 ~/website-status-check/check.py`
 
 
 ## Maintain
