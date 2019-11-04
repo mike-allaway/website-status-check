@@ -3,7 +3,6 @@ from datetime import datetime
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import os
 
 # Define a list of urls to check.
 # If a db is included in the site, include an extra url of a page that includes data from db
